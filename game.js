@@ -15,7 +15,7 @@ let round= 0;
 function video(){
     whoseTurn.style.display = 'none';
     picturePlayer1.src = "./images/IMG_1218.mov";
-    setTimeout(score, 4000);
+    setTimeout(score, 1500);
 }
 
 function score() {
@@ -131,7 +131,7 @@ const picturePlayer2 = document.getElementById('pic2')
 function video2(){
     whoseTurn.style.display = 'none';
     picturePlayer1.src = "./images/IMG_1218.mov";
-    setTimeout(scorePlayer2, 4000);
+    setTimeout(scorePlayer2, 1500);
 }
 
 let round2= 0;
