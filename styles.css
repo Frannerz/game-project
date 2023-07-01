@@ -129,7 +129,7 @@ div img {
   
   .dropdown:hover .dropbtn {background-color: #1393d2;}
 /*Instructions*/
-.scoring h2 {
+.scoring h3 {
     text-align: center;
     font-family: 'Cherry Bomb One', cursive;
     font-size: 1.5rem;
@@ -140,7 +140,6 @@ div img {
 .scoring {
     text-align: center;
 }
-
 
 
 .scoring img {
