@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Moirai+One&display=swap" 
+rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+rel="stylesheet">
+    <title>Pass The Pigs</title>
+</head>
+<body>
+    <header>
+        <h1>Pass the Pigs!</h1>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+              <a href="instructions.html">Instructions</a>
+            </div>
+            <br>
+            <br>
+        </div>
+        
+        
+
+    </header>
+    <main>
+        <section class="currentGo">
+            <div>
+                <img src="./images/passThePigs.webp" id="pic1">
+            </div>
+            <div>
+                <p id="score1"> 0 points </p>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section id="winners">
+            <p id="winner1">Player 1 Wins!!!</p>
+            <p id="winner2">Player 2 Wins!!!</p>
+        </section>
+        <section>
+            <div class="players">
+                <h2>Player 1</h2>
+                <br>
+                <button id="flip1">Flip!</button>
+                <button id="stick1">Stick!</button>
+                <br>
+                <div class="points">
+                    <p>Round Points: <span id="round1">0</span></p>
+                    <p>Total Points: <span id="total1">0</span> </p>
+                </div>
+            </div>
+            
+            <div class="arrow">
+                <img src="./images/player1.png" id="playerArrow">
+                <p id="playerTurn">Pass the Pigs!</p>
+            </div>
+           
+
+            <div class="players">
+                <h2>Player 2</h2>
+                <br>
+                <button id="flip2">Flip!</button>
+                <button id="stick2">Stick!</button>
+                <br>
+                <div class="points">
+                    <p>Round Points: <span id="round2">0</span></p>
+                    <p>Total Points: <span id="total2">0</span> </p>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <script src="./game.js"></script>
+</body>
+</html>

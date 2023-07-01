@@ -1,0 +1,169 @@
+html{
+    font-size: 16px;
+}
+body {
+    background-image: url('./images/farmyard2.jpeg');
+    background-size: cover;
+    background-position: bottom;
+}
+main {
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+/* Header */
+header {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 3rem;
+}
+/*Current Go*/
+.currentGo {
+    display: flex;
+    width: 500px;
+    justify-content: center; 
+    margin: 0 auto; 
+}
+  
+.currentGo div img {
+    margin: 20px;
+    border-radius: 10px;
+    border:solid rgb(212, 241, 184) 10px ;
+}
+#score1 {
+    background-color: rgb(212, 241, 184);
+    min-width: 200px;
+    min-height: 50px;
+    border-radius: 10px;
+    color:black;
+    margin: 20px;
+    padding: 5px;
+    font-size: 2rem;
+}
+/* Players area */
+
+h2 {
+    text-align: center; 
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 2rem;
+    background-color: #a9dfef;
+    border-radius: 10px;
+}
+
+button {
+    font-size: 1.5rem;
+    font-family: 'Cherry Bomb One', cursive;
+}
+
+.players {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+p {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #f1f1f1;
+}
+
+.points {
+    background-color: #1393d2;
+    padding: 10px
+}
+
+/*Arrow*/
+div img {
+    border: none;
+}
+
+.arrow p {
+    color:black;
+    font-size: 2rem;
+    background-color: rgb(212, 241, 184);
+    border-radius: 10px;
+}
+
+
+/*dropdown menu*/
+.dropbtn {
+    background-color: #a9dfef;
+    color: rgb(17, 14, 14);
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    width: 200px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 1.2rem;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 200px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #1393d2;}
+/*Instructions*/
+h3 {
+    text-align: center;
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 1.5rem;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.points {
+    border: 1px solid black;
+}
+
+.fishImages {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Winner*/
+
+#winner1 {
+    display: none;
+
+}
+
+
+#winner2 {
+    display:none;
+}
