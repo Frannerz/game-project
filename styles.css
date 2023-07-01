@@ -43,7 +43,18 @@ h1 {
     padding: 5px;
     font-size: 2rem;
 }
+
+img{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
 /* Players area */
+section {
+    display: flex;
+    justify-content: space-around;
+}
 
 h2 {
     text-align: center; 
@@ -73,7 +84,8 @@ p {
 
 .points {
     background-color: #1393d2;
-    padding: 10px
+    padding: 10px;
+    border: 1px solid black;
 }
 
 /*Arrow*/
@@ -128,6 +140,11 @@ div img {
   .dropdown:hover .dropdown-content {display: block;}
   
   .dropdown:hover .dropbtn {background-color: #1393d2;}
+
+
+
+
+
 /*Instructions*/
 h3 {
     text-align: center;
@@ -135,27 +152,15 @@ h3 {
     font-size: 1.5rem;
 }
 
-section {
-    display: flex;
-    justify-content: space-around;
+.scoring {
+    text-align: center;
+    height: auto;
 }
 
-img{
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
+.scoring>img{
+    width: 80%;
+    height: auto;
 }
-
-.points {
-    border: 1px solid black;
-}
-
-.fishImages {
-    display: flex;
-    justify-content: center;
-}
-
-
 /*Winner*/
 
 #winner1 {
