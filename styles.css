@@ -51,7 +51,7 @@ img{
 }
 
 /* Players area */
-section {
+#hideAtWinner {
     display: flex;
     justify-content: space-around;
 }

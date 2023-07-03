@@ -86,6 +86,8 @@ function score() {
         picturePlayer1.src = "./images/pigOut.jpeg";
         whoseTurn.style.display = 'block';
         arrow.src = "./images/player2.png"
+        flipPlayer1.removeEventListener('click', video);
+        flipPlayer2.addEventListener('click', video2);
     } else if (number === 36 || number === 37 || number === 38) {
         round = 0;
         totalPoints.innerHTML = 0;
@@ -99,10 +101,10 @@ function score() {
 
 
 const stickPlayer1 = document.getElementById('stick1');
-stickPlayer1.addEventListener('click', stick)
-let whoseTurn = document.getElementById('playerTurn')
-let arrow = document.getElementById('playerArrow')
-
+stickPlayer1.addEventListener('click', stick);
+let whoseTurn = document.getElementById('playerTurn');
+let arrow = document.getElementById('playerArrow');
+const player1Wins = document.getElementById('winner1');
 
 let totalPlayer1 = 0
 
@@ -111,10 +113,16 @@ function stick () {
     round = 0;
     roundPoints.innerHTML = 0;
     currentScore.innerHTML = 0;
-    whoseTurn.style.display = 'block';
-    arrow.src = "./images/player2.png";
-    flipPlayer1.removeEventListener('click', video);
-    flipPlayer2.addEventListener('click', video2);
+    if (totalPlayer2>=100){
+        player1Wins.style.display = 'block';
+        hideAtEnd.style.display = 'none';
+    } else {
+        whoseTurn.style.display = 'block';
+        arrow.src = "./images/player2.png";
+        flipPlayer1.removeEventListener('click', video);
+        flipPlayer2.addEventListener('click', video2);
+    }
+   
 }
 
 
@@ -126,7 +134,8 @@ const flipPlayer2 = document.getElementById('flip2');
 
 const totalPoints2 = document.getElementById('total2');
 const roundPoints2 = document.getElementById('round2');
-const picturePlayer2 = document.getElementById('pic2')
+const picturePlayer2 = document.getElementById('pic2');
+const hideAtEnd = document.getElementById('hideAtWinner')
 
 function video2(){
     whoseTurn.style.display = 'none';
@@ -205,6 +214,8 @@ function scorePlayer2() {
         picturePlayer1.src = "./images/pigOut.jpeg";
         whoseTurn.style.display = 'block';
         arrow.src = "./images/player1.png"
+        flipPlayer2.removeEventListener('click', video2);
+        flipPlayer1.addEventListener('click', video);
     } else if (number2 === 36 || number2 === 37 || number2 === 38) {
         round2 = 0;
         totalPoints2.innerHTML = 0;
@@ -218,7 +229,8 @@ function scorePlayer2() {
 
 
 const stickPlayer2 = document.getElementById('stick2');
-stickPlayer2.addEventListener('click', stick2)
+stickPlayer2.addEventListener('click', stick2);
+const player2Wins = document.getElementById('winner2');
 
 
 let totalPlayer2 = 0
@@ -228,10 +240,15 @@ function stick2 () {
     round = 0;
     roundPoints2.innerHTML = 0;
     currentScore.innerHTML = 0;
+    if (totalPlayer2>=100){
+        player2Wins.style.display = 'block';
+        hideAtEnd.style.display = 'none';
+    } else {
     whoseTurn.style.display = 'block';
     arrow.src = "./images/player1.png";
     flipPlayer2.removeEventListener('click', video2);
     flipPlayer1.addEventListener('click', video);
+    }
 }
 
 
