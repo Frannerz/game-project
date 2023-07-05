@@ -94,7 +94,9 @@ function score() {
         currentScore.innerHTML = "Oh No! Makin' Bacon! Lose all your points!!";
         picturePlayer1.src = "./images/makinBacon.JPG";
         whoseTurn.style.display = 'block';
-        arrow.src = "./images/player2.png"
+        arrow.src = "./images/player2.png";
+        flipPlayer1.removeEventListener('click', video);
+        flipPlayer2.addEventListener('click', video2);
     }
     roundPoints.innerHTML = round;
 } 
@@ -222,7 +224,9 @@ function scorePlayer2() {
         currentScore.innerHTML = "Oh No! Makin' Bacon! Lose all your points!!";
         picturePlayer1.src = "./images/makinBacon.JPG";
         whoseTurn.style.display = 'block';
-        arrow.src = "./images/player1.png"
+        arrow.src = "./images/player1.png";
+        flipPlayer2.removeEventListener('click', video2);
+        flipPlayer1.addEventListener('click', video);
     }
     roundPoints2.innerHTML = round2;
 } 
