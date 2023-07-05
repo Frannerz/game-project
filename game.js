@@ -1,22 +1,27 @@
 
-//PLAYER 1 CONTROLS
+//PLAYER 1 
 
 const flipPlayer1 = document.getElementById('flip1');
 flipPlayer1.addEventListener('click', video);
-//flipPlayer1.addEventListener('click', score);
 
+//Variables player 1
 const totalPoints = document.getElementById('total1');
 const roundPoints = document.getElementById('round1');
 const currentScore = document.getElementById('score1');
 const picturePlayer1 = document.getElementById('pic1')
 
-
 let round= 0;
+
+//Current score
 function video(){
     whoseTurn.style.display = 'none';
     picturePlayer1.src = "./images/IMG_1218.mov";
     setTimeout(score, 1500);
 }
+
+const currentGo = document.getElementById('currentGo')
+
+//Player 1 scoring
 
 function score() {
     let number = Math.floor(Math.random() * 38);
@@ -101,7 +106,7 @@ function score() {
     roundPoints.innerHTML = round;
 } 
 
-
+//Player 1 stick
 const stickPlayer1 = document.getElementById('stick1');
 stickPlayer1.addEventListener('click', stick);
 let whoseTurn = document.getElementById('playerTurn');
@@ -115,9 +120,10 @@ function stick () {
     round = 0;
     roundPoints.innerHTML = 0;
     currentScore.innerHTML = 0;
-    if (totalPlayer2>=100){
+    if (totalPlayer1>=10){
         player1Wins.style.display = 'block';
         hideAtEnd.style.display = 'none';
+        currentGo.style.display = 'none';
     } else {
         whoseTurn.style.display = 'block';
         arrow.src = "./images/player2.png";
@@ -128,12 +134,12 @@ function stick () {
 }
 
 
-//PLAYER 2 CONTROLS
+//PLAYER 2 
 
 const flipPlayer2 = document.getElementById('flip2');
 //flipPlayer2.addEventListener('click', video2);
 
-
+//Player 2 variables
 const totalPoints2 = document.getElementById('total2');
 const roundPoints2 = document.getElementById('round2');
 const picturePlayer2 = document.getElementById('pic2');
@@ -145,6 +151,7 @@ function video2(){
     setTimeout(scorePlayer2, 1500);
 }
 
+//Player 2 scoring
 let round2= 0;
 
 
@@ -247,6 +254,7 @@ function stick2 () {
     if (totalPlayer2>=100){
         player2Wins.style.display = 'block';
         hideAtEnd.style.display = 'none';
+        currentGo.style.display = 'none';
     } else {
     whoseTurn.style.display = 'block';
     arrow.src = "./images/player1.png";

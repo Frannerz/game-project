@@ -165,10 +165,13 @@ h3 {
 
 #winner1 {
     display: none;
-
+    font-size: 10rem;
+    color:rgb(2, 33, 48)
 }
 
 
 #winner2 {
     display:none;
+    font-size: 10rem;
+    color: rgb(2, 33, 48)
 }
