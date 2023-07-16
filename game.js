@@ -16,7 +16,7 @@ const picturePlayer1 = document.getElementById('pic1')
 function video(){
     whoseTurn.style.display = 'none';
     picturePlayer1.src = "./images/IMG_1218.mov";
-    setTimeout(score, 1500);
+    setTimeout(score, 1200);
 }
 
 const currentGo = document.getElementById('currentGo')
@@ -361,7 +361,7 @@ const hideAtEnd = document.getElementById('hideAtWinner')
 function video2(){
     whoseTurn.style.display = 'none';
     picturePlayer1.src = "./images/IMG_1218.mov";
-    setTimeout(scorePlayer2, 1500);
+    setTimeout(scorePlayer2, 1200);
 }
 
 
