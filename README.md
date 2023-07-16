@@ -1,5 +1,4 @@
-## game-project
-## Pass the pigs game
+## game-project: Pass the pigs game
 
 # Planning and starting my project
 I decided to try and make an online version of a game I play in real life- Pass the Pigs.
