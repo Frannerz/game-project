@@ -26,7 +26,7 @@ const currentGo = document.getElementById('currentGo')
 let round= 0;
 
 function score() {
-    let number = Math.ceil(Math.random() * 200);
+    let number = Math.ceil(Math.random() * 265);
     let scoreMessage = "";
     let imageSource = "";
     console.log(number);
@@ -38,7 +38,7 @@ function score() {
         case 5:    
         case 6:
         case 7:
-        case 54:
+        case 54:    
         case 79:
         case 80:
         case 81:
@@ -56,6 +56,16 @@ function score() {
         case 173:
         case 174:
         case 175:
+        case 201:
+        case 202:
+        case 203:
+        case 204:
+        case 205:
+        case 206:
+        case 207:
+        case 208:
+        case 209:
+        case 210:        
             round++;
             scoreMessage = 'Sider! 1 point';
             imageSource = "./images/siderNoSpots.jpeg";
@@ -84,6 +94,16 @@ function score() {
         case 179:
         case 180:
         case 181:
+        case 211:
+        case 212:
+        case 213:
+        case 214:
+        case 215:
+        case 216:
+        case 217:
+        case 218:
+        case 219:
+        case 220:
             round++;
             scoreMessage = 'Sider! 1 point';
             imageSource = "./images/siderSpots.jpeg";
@@ -110,6 +130,16 @@ function score() {
         case 185:
         case 186:
         case 187:
+        case 221:
+        case 222:
+        case 223:
+        case 224:
+        case 225:
+        case 226:
+        case 227:
+        case 228:
+        case 229:
+        case 230:
             round += 5;
             scoreMessage = 'Trotter! 5 points';
             imageSource = "./images/trotterSider.jpg";
@@ -136,6 +166,16 @@ function score() {
         case 191:
         case 192:
         case 193:
+        case 231:
+        case 232:
+        case 233:
+        case 234:
+        case 235:
+        case 236:
+        case 237:
+        case 238:
+        case 239:
+        case 240:
             round += 5;
             scoreMessage = 'Razor Back! 5 points';
             imageSource = "./images/razorBackSiderJPG.JPG";
@@ -180,6 +220,7 @@ function score() {
         case 111:
         case 133:
         case 146:
+        case 246:
             round += 15;
             scoreMessage = 'Snouter + Razor Back! 15 points';
             imageSource = "./images/snouterRazorback.jpeg";
@@ -192,6 +233,7 @@ function score() {
         case 113:
         case 132:
         case 147:
+        case 247:
             round += 15;
             scoreMessage = 'Snouter + Trotter! 15 points';
             imageSource = "./images/snouterTrotter.JPG";
@@ -204,6 +246,7 @@ function score() {
         case 115:
         case 127:
         case 148:
+        case 248:
             round += 15;
             scoreMessage = 'Leaning Jowler! 15 points';
             imageSource = "./images/leaningJowlerSider.jpeg";
@@ -213,6 +256,12 @@ function score() {
         case 50:
         case 128:
         case 149:
+        case 251:
+        case 252:
+        case 253:
+        case 254:
+        case 255:
+        case 249:
             round += 20;
             scoreMessage = 'Double Razor Back! 20 points';
             imageSource = "./images/doubleRazorBack.jpeg";
@@ -222,6 +271,12 @@ function score() {
         case 53:
         case 129:
         case 150:
+        case 256:
+        case 257:
+        case 258:
+        case 259:
+        case 260:
+        case 250:
             round += 20;
             scoreMessage = 'Double Trotter! 20 points';
             imageSource = "./images/doubleTrotter.jpeg";
@@ -285,6 +340,16 @@ function score() {
         case 198:
         case 199:
         case 200:
+        case 241:
+        case 242:
+        case 243:
+        case 244:
+        case 245:
+        case 261:
+        case 262:
+        case 263:
+        case 264:
+        case 265:
             round = 0;
             scoreMessage = 'Pig Out!!! 0 points';
             imageSource = "./images/pigOut.jpeg";
@@ -323,6 +388,7 @@ stickPlayer1.addEventListener('click', stick);
 let whoseTurn = document.getElementById('playerTurn');
 let arrow = document.getElementById('playerArrow');
 const player1Wins = document.getElementById('winner1');
+const playAgainButton = document.getElementById('playAgain');
 
 //Variable to score total points 
 let totalPlayer1 = 0
@@ -335,6 +401,7 @@ function stick () {
     currentScore.innerHTML = 0;
     if (totalPlayer1>=100){
         player1Wins.style.display = 'block';
+        playAgainButton.style.display = 'block';
         hideAtEnd.style.display = 'none';
         currentGo.style.display = 'none';
     } else {
@@ -370,7 +437,7 @@ function video2(){
 let round2= 0;
 
 function scorePlayer2() {
-    let number2 = Math.ceil(Math.random() * 200);
+    let number2 = Math.ceil(Math.random() * 265);
     let scoreMessage = "";
     let imageSource = "";
     console.log(number2);
@@ -400,6 +467,16 @@ function scorePlayer2() {
         case 173:
         case 174:
         case 175:
+        case 201:
+        case 202:
+        case 203:
+        case 204:
+        case 205:
+        case 206:
+        case 207:
+        case 208:
+        case 209:
+        case 210:        
             round2++;
             scoreMessage = 'Sider! 1 point';
             imageSource = "./images/siderNoSpots.jpeg";
@@ -428,6 +505,16 @@ function scorePlayer2() {
         case 179:
         case 180:
         case 181:
+        case 211:
+        case 212:
+        case 213:
+        case 214:
+        case 215:
+        case 216:
+        case 217:
+        case 218:
+        case 219:
+        case 220:
             round2++;
             scoreMessage = 'Sider! 1 point';
             imageSource = "./images/siderSpots.jpeg";
@@ -454,6 +541,16 @@ function scorePlayer2() {
         case 185:
         case 186:
         case 187:
+        case 221:
+        case 222:
+        case 223:
+        case 224:
+        case 225:
+        case 226:
+        case 227:
+        case 228:
+        case 229:
+        case 230:
             round2 += 5;
             scoreMessage = 'Trotter! 5 points';
             imageSource = "./images/trotterSider.jpg";
@@ -480,6 +577,16 @@ function scorePlayer2() {
         case 191:
         case 192:
         case 193:
+        case 231:
+        case 232:
+        case 233:
+        case 234:
+        case 235:
+        case 236:
+        case 237:
+        case 238:
+        case 239:
+        case 240:
             round2 += 5;
             scoreMessage = 'Razor Back! 5 points';
             imageSource = "./images/razorBackSiderJPG.JPG";
@@ -524,6 +631,7 @@ function scorePlayer2() {
         case 111:
         case 133:
         case 146:
+        case 246:
             round2 += 15;
             scoreMessage = 'Snouter + Razor Back! 15 points';
             imageSource = "./images/snouterRazorback.jpeg";
@@ -536,6 +644,7 @@ function scorePlayer2() {
         case 113:
         case 132:
         case 147:
+        case 247:
             round2 += 15;
             scoreMessage = 'Snouter + Trotter! 15 points';
             imageSource = "./images/snouterTrotter.JPG";
@@ -548,6 +657,7 @@ function scorePlayer2() {
         case 115:
         case 127:
         case 148:
+        case 248:
             round2 += 15;
             scoreMessage = 'Leaning Jowler! 15 points';
             imageSource = "./images/leaningJowlerSider.jpeg";
@@ -557,6 +667,12 @@ function scorePlayer2() {
         case 50:
         case 128:
         case 149:
+        case 251:
+        case 252:
+        case 253:
+        case 254:
+        case 255:
+        case 249:
             round2 += 20;
             scoreMessage = 'Double Razor Back! 20 points';
             imageSource = "./images/doubleRazorBack.jpeg";
@@ -566,6 +682,12 @@ function scorePlayer2() {
         case 53:
         case 129:
         case 150:
+        case 256:
+        case 257:
+        case 258:
+        case 259:
+        case 260:
+        case 250:
             round2 += 20;
             scoreMessage = 'Double Trotter! 20 points';
             imageSource = "./images/doubleTrotter.jpeg";
@@ -629,6 +751,16 @@ function scorePlayer2() {
         case 198:
         case 199:
         case 200:
+        case 241:
+        case 242:
+        case 243:
+        case 244:
+        case 245:
+        case 261:
+        case 262:
+        case 263:
+        case 264:
+        case 265:
             round2 = 0;
             scoreMessage = 'Pig Out!!! 0 points';
             imageSource = "./images/pigOut.jpeg";
@@ -676,6 +808,7 @@ function stick2 () {
     currentScore.innerHTML = 0;
     if (totalPlayer2>=100){
         player2Wins.style.display = 'block';
+        playAgainButton.style.display = 'block';
         hideAtEnd.style.display = 'none';
         currentGo.style.display = 'none';
     } else {
