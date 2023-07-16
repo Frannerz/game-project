@@ -29,11 +29,6 @@ function score() {
     let number = Math.ceil(Math.random() * 200);
     let scoreMessage = "";
     let imageSource = "";
-
-    currentScore.innerHTML = scoreMessage;
-    picturePlayer1.src = imageSource;
-    roundPoints.innerHTML = round;
-    
     console.log(number);
     switch (number) {
         case 1:
@@ -315,7 +310,9 @@ function score() {
             break;
     };
     console.log(round);
-    
+    currentScore.innerHTML = scoreMessage;
+    picturePlayer1.src = imageSource;
+    roundPoints.innerHTML = round;
 }
 
 
